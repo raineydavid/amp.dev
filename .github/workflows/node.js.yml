@@ -27,5 +27,6 @@ jobs:
     - env:
         AMP_DOC_TOKEN: ${{ secrets.AMP_DOC_TOKEN }}
     - run: npm ci  
+    - run: npm run bootstrap  
     - run: npm run build --if-present
     - run: npm test
