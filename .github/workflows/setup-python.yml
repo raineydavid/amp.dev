@@ -16,3 +16,8 @@ outputs:
 branding:
   icon: 'code'
   color: 'yellow'
+on:
+  push:
+    branches: [ preview ]
+  pull_request:
+    branches: [ future ]
